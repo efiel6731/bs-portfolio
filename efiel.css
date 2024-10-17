@@ -1,0 +1,44 @@
+/* styles.css */
+
+/* Hero Section Styling */
+#hero {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    height: 100vh; /* Full viewport height */
+    background-color: #06141B; /* Background color for the hero section */
+}
+
+#hero .container {
+    display: flex;
+    align-items: center; /* Center contents vertically within the container */
+    justify-content: center; /* Center contents horizontally within the container */
+}
+
+#hero .row {
+    width: 100%;
+    display: flex;
+    align-items: center; /* Center items in the row vertically */
+    justify-content: center; /* Center items in the row horizontally */
+}
+
+/* Center image and limit the max width */
+#hero img {
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Text styling */
+#hero h1,
+#hero h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Button styling */
+#hero .btn {
+    margin-top: 20px;
+}
+
+
