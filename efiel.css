@@ -1,44 +1,56 @@
-/* styles.css */
-
-/* Hero Section Styling */
-#hero {
-    display: flex;
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
-    height: 100vh; /* Full viewport height */
-    background-color: #06141B; /* Background color for the hero section */
+html {
+    scroll-behavior: smooth;
 }
 
-#hero .container {
-    display: flex;
-    align-items: center; /* Center contents vertically within the container */
-    justify-content: center; /* Center contents horizontally within the container */
+    /* Skills Section */
+#skills {
+    background-color: #393939;
+    padding: 50px 0;
 }
 
-#hero .row {
-    width: 100%;
-    display: flex;
-    align-items: center; /* Center items in the row vertically */
-    justify-content: center; /* Center items in the row horizontally */
-}
-
-/* Center image and limit the max width */
-#hero img {
-    max-width: 400px;
-    width: 100%;
-}
-
-/* Text styling */
-#hero h1,
-#hero h3 {
-    margin: 0;
-    padding: 0;
+#skills h2 {
     color: white;
 }
 
-/* Button styling */
-#hero .btn {
-    margin-top: 20px;
+.skill-card {
+    background-color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    height: 150px; /* Ensures cards have uniform height */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.skill-card img {
+    max-width: 100%;
+    max-height: 100px; /* Ensures images don't exceed the card size */
+    object-fit: contain; /* Keeps the aspect ratio of the images */
+}
 
+/* Hover effect for skill cards */
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive card layout */
+@media (max-width: 576px) {
+    .skill-card {
+        height: 130px; /* Adjust card height for smaller screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .skill-card {
+        height: 180px; /* Slightly larger for tablets and medium screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .skill-card {
+        height: 200px; /* Adjust card size for larger screens */
+    }
+}
